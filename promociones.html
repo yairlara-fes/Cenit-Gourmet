@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- seccion head -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cenit Gourmet | Promociones</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- seccion encabezado -->
+  <header class="site-header">
+    <div class="container header-contenido">
+      <div class="logo">
+        <span class="logo-marca">
+          <img src="images/logo.png" alt="Logotipo Cenit Gourmet">
+        </span>
+        <span class="logo-texto">Cenit Gourmet</span>
+      </div>
+
+      <nav class="nav-principal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="promociones.html" class="is-active">Promociones</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- seccion contenido principal -->
+  <main>
+
+    <!-- seccion hero promociones -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-titulo">Promociones y cupones</h1>
+        <p class="page-hero-texto">
+          Algunas experiencias y beneficios especiales para que disfrutes el menú
+          de Cenit Gourmet al máximo. Los códigos pueden mostrarse en caja o
+          escribirse al hacer tu reservación.
+        </p>
+      </div>
+    </section>
+
+    <!-- seccion tarjetas promociones -->
+    <section class="section">
+      <div class="container">
+        <header class="section-cabecera">
+          <p class="section-eyebrow">Ofertas vigentes</p>
+          <h2 class="section-titulo">Promociones de la casa</h2>
+        </header>
+
+        <div class="promos-grid">
+          <article class="tarjeta">
+            <p class="tarjeta-etiqueta">Lunes a jueves</p>
+            <h3 class="tarjeta-titulo">2x1 en Michelada Premium</h3>
+            <p class="detalle-promo">
+              Disfruta de nuestra Michelada Premium en formato 2x1 al ordenar
+              cualquier plato fuerte del menú.
+            </p>
+            <p><span class="cupon">CG-2X1-MICHELADA</span></p>
+          </article>
+
+          <article class="tarjeta">
+            <p class="tarjeta-etiqueta">Comida</p>
+            <h3 class="tarjeta-titulo">Postre al 50%</h3>
+            <p class="detalle-promo">
+              En la compra de un plato fuerte tamaño grande, obtén cualquier
+              postre chico con 50% de descuento.
+            </p>
+            <p><span class="cupon">CG-POSTRE-50</span></p>
+          </article>
+
+          <article class="tarjeta">
+            <p class="tarjeta-etiqueta">Noche</p>
+            <h3 class="tarjeta-titulo">Experiencia Cenit para dos</h3>
+            <p class="detalle-promo">
+              Dos platos fuertes a elegir + dos bebidas medianas + un postre
+              grande para compartir a precio especial.
+            </p>
+            <p><span class="cupon">CG-CENA-2PAX</span></p>
+          </article>
+
+          <article class="tarjeta">
+            <p class="tarjeta-etiqueta">Cumpleaños</p>
+            <h3 class="tarjeta-titulo">Postre de cortesía</h3>
+            <p class="detalle-promo">
+              Presenta una identificación y recibe un postre chico de cortesía
+              el día de tu cumpleaños.
+            </p>
+            <p><span class="cupon">CG-HBD</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- seccion formulario promociones -->
+    <section class="section section--ultima">
+      <div class="container">
+        <header class="section-cabecera">
+          <p class="section-eyebrow">Suscripción</p>
+          <h2 class="section-titulo">Recibe noticias y promociones</h2>
+          <p class="section-descripcion">
+            Llena este formulario si deseas estar siempre actualizado sobre nuestros nuevos menús y promociones.
+          </p>
+        </header>
+
+        <form class="form-promos" action="#" method="get">
+          <div class="form-promos-campos">
+            <div class="form-control">
+              <label for="nombre">Nombre:</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                placeholder="Nombre(s)"
+                required
+              >
+            </div>
+
+            <div class="form-control">
+              <label for="correo">Correo electrónico:</label>
+              <input
+                id="correo"
+                name="correo"
+                type="email"
+                placeholder="correo@ejemplo.com"
+                required
+              >
+            </div>
+
+            <div class="form-control">
+              <label for="dia">Día de visita preferido:</label>
+              <select id="dia" name="dia">
+                <option value="" selected>Selecciona un día</option>
+                <option value="entre-semana">Entre semana</option>
+                <option value="fin-de-semana">Fin de semana</option>
+              </select>
+            </div>
+
+            <div class="form-control">
+              <label for="comentarios">Comentarios:</label>
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                placeholder="Indica si celebras algo especial o si tienes restricciones alimentarias."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-acciones">
+            <button class="btn btn-secundario" type="reset">Limpiar</button>
+            <button class="btn btn-primario" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- seccion pie de pagina -->
+  <footer class="site-footer">
+    <div class="container footer-contenido">
+      <p>Cenit Gourmet · Menú digital</p>
+      <p>Alumno: Yair Lara Martinez · Materia: Programación Web</p>
+      <p>&copy; 2025 Cenit Gourmet</p>
+    </div>
+  </footer>
+
+</body>
+</html>
